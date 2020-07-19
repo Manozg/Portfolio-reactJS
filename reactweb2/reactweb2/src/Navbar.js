@@ -21,10 +21,10 @@ const Navbar = () => {
                             <NavLink activeClassName='menu_active' exact className="nav-link active" aria-current="page" to="/">Home </NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink activeClassName='menu_active' exact className="nav-link" to="/service">Services</NavLink>
+                                <NavLink  activeClassName='menu_active' exact className="nav-link" to="/about">About</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink  activeClassName='menu_active' exact className="nav-link" to="/about">About</NavLink>
+                                <NavLink activeClassName='menu_active' exact className="nav-link" to="/service">Services</NavLink>
                             </li>
                             <li className="nav-item">
                                 <NavLink  activeClassName='menu_active' exact className="nav-link" to="/contact">Contact</NavLink>

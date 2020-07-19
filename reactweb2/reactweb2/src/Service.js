@@ -8,7 +8,8 @@ const Service = () => {
   return (
     <React.Fragment> 
         <div className="my-5">
-            <h1 className="text-center"> Our Services</h1>
+            <h1 className="text-center services"> Our Services</h1>
+            <hr />
         </div>
         <div className="container-fluid mb-5">
             <div className="row">
