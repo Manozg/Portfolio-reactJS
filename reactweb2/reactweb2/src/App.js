@@ -14,13 +14,15 @@ const App = () => {
   return (
     <React.Fragment>
       <Navbar />
+      <main>
         <Switch>
-          <Route exact path="/" component={Home} /> 
+          <Route exact path="/" component={Home} />
           <Route exact path="/about" component={About} />
           <Route exact path="/service" component={Service} />
           <Route exact path="/contact" component={Contact} />
           <Redirect to="/" />
         </Switch>
+      </main>
       <Footer />
     </React.Fragment>
   );

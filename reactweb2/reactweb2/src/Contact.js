@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {  Button, Form, FormGroup, Label, Input, Col, FormFeedback  } from 'reactstrap';
 import './App.css';
+import { NavLink } from 'react-router-dom';
 
 class Contact extends Component {
   
@@ -94,7 +95,7 @@ handleSubmit(event) {
             <div className="row">
                 <div className="col">
                   <div className="row row-content align-items-center">
-                    <div className="col-sm-6 ">
+                    <div className="col-sm-4 ">
                         <h5>Our Address</h5>
                         <address>
                             123 Street<br />
@@ -102,12 +103,13 @@ handleSubmit(event) {
                             U.S.A.
                         </address>
                     </div>
-                  <div className="col-sm-6">
-                    <h5>Contact us via..</h5>
-                    <address>
-                      <a role="button" className="btn btn-link" href="tel:+12065551234"><i className="fa fa-phone"></i> 1-123-456-7890</a><br />
-                      <a role="button" className="btn btn-link" href="mailto:fakeemail@fakeemail.co"><i className="fa fa-envelope-o"></i> info@ultimate.com</a>
-                    </address>
+                  <div className="col-sm-4">
+                    <h5>Email us at</h5>
+                      <NavLink role="button" className="btn btn-link" to="/mailto:fakeemail@fakeemail.co"><i className="fa fa-envelope-o"></i> info@ultimate.com</NavLink>
+                  </div>
+                  <div className="col-sm-4">
+                    <h5>Call us at</h5>
+                      <NavLink role="button" className="btn btn-link" to="/tel:+12065551234"><i className="fa fa-phone"></i> 1-123-456-7890</NavLink>
                   </div>
                 </div>
                 <hr />
@@ -196,6 +198,7 @@ handleSubmit(event) {
                                         onChange={this.handleInputChange}></Input>
                                 </Col>
                             </FormGroup>
+                            <br />
                             <FormGroup row>
                                 <Col md={{size: 10, offset: 2}}>
                                     <Button type="submit" color="primary">
