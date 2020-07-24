@@ -1,15 +1,17 @@
 import React from 'react';
 import {NavLink} from 'react-router-dom'
+import img from '../src/images/Logo.png';
 import './App.css';
 
 const Navbar = () => {
   return (
     <React.Fragment> 
-        <div className="container-fluid nav_bg"> 
+        <div className="container-fluid nav_bg sticky-top"> 
         <div className="row">
             <div className="col-12 mx-auto">
                 <nav className="navbar navbar-expand-lg navbar-light bg-light">
                     <div className="container-fluid">
+                        <img src={img} className="logo" alt={img}  />
                         <NavLink className="navbar-brand" to="/"> Ultimate Solution </NavLink>
                         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="navbar-toggler-icon"></span>
@@ -30,7 +32,6 @@ const Navbar = () => {
                                 <NavLink  activeClassName='menu_active' exact className="nav-link" to="/contact">Contact</NavLink>
                             </li>
                         </ul>
-
                     </div>
                     </div>
                     </nav>

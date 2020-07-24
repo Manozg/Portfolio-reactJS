@@ -6,7 +6,7 @@ import './App.css';
 const Home = () => {
   return (
     <React.Fragment> 
-      <Common name = "Grow your business with " imgsrc={img} visit="/service" btname=" Get Started" />
+      <Common name = "Welcome to ..........." imgsrc={img} visit="/service" btname=" Get Started" />
     </React.Fragment> 
   );
 }
