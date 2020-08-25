@@ -1,0 +1,13 @@
+@import '../../index.scss';
+
+.title {
+    font-size: 1.7rem;
+    margin: 1rem 5rem;
+    background-color: rgb(208, 211, 207);
+    color:$mainPurple;
+    padding: 0.3rem;
+    border-radius: 1rem;
+}
+.formlabel {
+    text-align: left;
+}

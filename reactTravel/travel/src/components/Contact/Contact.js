@@ -1,10 +1,15 @@
-import React from 'react'
+import React from 'react';
+import Form from '../Form/Form';
+import Accordion from '../Accordion/Accordion'
 
 const Contact = () => {
     return (
-        <div>
-            Hello from Contact page
-        </div>
+        <React.Fragment>
+            
+            <Accordion />
+            <Form />
+
+        </React.Fragment>
     )
 }
 
