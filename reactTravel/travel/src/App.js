@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import Destination from './components/Destination/Destination';
 import Home from './components/Home/Home';
 import Contact from './components/Contact/Contact';
+import Login from './components/Login/Login';
 import Error from './components/Error/Error';
 import Footer from './components/Footer/Footer'
 
@@ -19,6 +20,7 @@ class App extends Component {
                   <Route exact path="/" component={Home} />
                   <Route exact path="/destination" component={Destination} />
                   <Route exact path="/contact" component={Contact} />
+                  <Route exact path="/login" component={Login} />
                   <Route component={Error} />
                 </Switch>
           </main>

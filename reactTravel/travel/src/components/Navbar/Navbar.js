@@ -17,6 +17,9 @@ import logo from '../../images/Logo.png'
                 <li>
                     <a href="/Contact" className="nav-link active"> Contact </a>
                 </li>
+                <li>
+                    <a href="/Login" className="nav-link active"> Login </a>
+                </li>
             </ul>
         </nav>
     );
